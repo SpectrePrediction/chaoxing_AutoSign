@@ -1,4 +1,4 @@
-# chaoxingautosign</br>
+# chaoxing_AutoSign</br>
  ## 超星尔雅自动签到</br>
  使用手机扫描二维码登录</br>
 

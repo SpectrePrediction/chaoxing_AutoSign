@@ -17,14 +17,15 @@ AutoSign类中对外直接暴露的两个函数</br>
 run（注意，这个函数很好用，但他是一个死循环）</br>
 run_one（他仅仅扫描一次）</br>
 他们不需要任何参数</br>
-其余函数并不建议直接使用，例如_AutoSign__get_class_json(在类中为__get_class_json)</br>
+其余函数并不建议直接使用，例如_AutoSign__get_class_json获取课程信息json(在类中为__get_class_json)</br>
 ### CheckSignThread（基于threading.Thread）其中组合了AutoSign类</br>
 CheckSignThread类的父类是threading.Thread</br>
 他仅仅封装了停止,恢复停止,以及结束等函数</br>
 例子放在了main里面，但你直接运行时不会触发（因为在他前面的是AutoSign类中run函数，他是个死循环）</br>
+你可以注释掉不需要的部分来尝试这个例子</br>
 CheckSignThread类和AutoSign类中的run_one都是提供给那些希望自己控制次数和时间的人</br>
 （当然，你也可以快捷的在构造AutoSign时提供扫描的间隔时间，并在run中使用他们）</br>
 
-这个小小的脚本也许不会有人发现？😀</br>
+这个小小的脚本或许不会有人发现？😀</br>
 
 
